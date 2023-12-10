@@ -190,9 +190,9 @@ options(digits=11)
 
 # Power t-test
 
-#power.t.test()
+# power.t.test(delta = delta, power = power, sig.level = alpha, type="one.sample")
 # n = number of observations for 1 group
-# delta = true difference in mean
+# delta = true difference in mean.
 # sd = standard deviation
 # sig.level = significance level
 # power = power of test
