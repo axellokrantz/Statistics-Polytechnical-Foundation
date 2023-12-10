@@ -331,6 +331,13 @@ options(digits=11)
 # Expected counts for k (Table)
 # eij = ((i'th row total) * (j'th column total))/total
 
+# Proportion.test
+
+# Define your counts of successes and trials
+# x <- c(10, 20) # replace with your counts of successes
+# n <- c(50, 100) # replace with your counts of trials
+# result <- prop.test(x, n), conf.level can be added: conf.level = 0.95
+
 #######################################################################################################################
 
 # Derivative
