@@ -147,6 +147,7 @@ options(digits=11)
 # If p value < alpha value we reject the H0 hypothesis that there is no difference.
 
 # One sample t-test
+# Sample size formula (how many observations needed): n <- 
 # Degrees of freedom: n - 1 where n is the sample size.
 # Used to compare a single population to a standard value. For example determine whether the avg.
 # lifespan of a specific town is different from the country average. 
