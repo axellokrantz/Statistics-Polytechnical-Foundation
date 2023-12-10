@@ -295,7 +295,7 @@ options(digits=11)
 
 # Post Hoc Analysis:
 # No bonferroni is required if we are doing one pre-specified comparison.
-# (yhat1 - yhat2) + qt(0.975, df)*sqrt((SSE/(n-k))*(1/n1 + 1/nj))
+# (yhat1 - yhat2) - qt(0.975, df)*sqrt(MSE*(1/n1 + 1/n2))
 # df = n - k, SSE = variance, yhat = mean
 
 # Two way ANOVA
