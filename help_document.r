@@ -119,6 +119,18 @@ options(digits=11)
 # Mean: μ = n * a/N
 # Variance: α^2 = na*(N-a)(N-n)/N^2*(N-1)
 
+# A Chi-Square Distribution (X^2)
+# Is a type of probability distribution that is used in hypothesis testing and is based on a normally distributed random variable.
+# It is used in various statistical applications involving degrees of freedom.
+
+# pchisq(q, df): This function calculates the cumulative distribution function for a chi-square distribution with a given
+# degrees of freedom. It returns the probability that a chi-square distributed random variable with this degrees of freedom will be less than or equal to q. 
+# For example, pchisq(3.84, 1) returns the probability that a chi-square variable with 1 degree of freedom is less than or equal to 3.84, which is approximately 0.95.
+
+# qchisq(p, df): This function calculates the quantile function for a chi-square distribution with a given degrees of freedom.
+# It returns the value of the random variable such that the probability of the variable being less than or equal to that value equals the given probability p. 
+# For example, qchisq(0.95, 1) returns the 95% quantile of the chi-square distribution with 1 degree of freedom.
+
 #######################################################################################################################
 
 # Hypthesis Testing
