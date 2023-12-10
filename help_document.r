@@ -151,7 +151,7 @@ options(digits=11)
 # sig = significance (0.05 for example)
 # sd = standard deviation.
 # power = statistical power (1 - beta). Likelihood of a significance test detecting
-# an effect when there actually is one. It is sometimes also called sensitivity.
+# an effect when there actually is one. It is sometimes also called sensitivity. If power is 45, then there is a 65% chance of making a type 2 error.
 # beta = typically 0.2 (probability of committing a Type II error which is failing to reject the null hypothesis when its actually false.
 # ME = difference in mean.
 
