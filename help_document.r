@@ -75,7 +75,7 @@ options(digits=11)
 # Mean: μ = 1/λ
 # Variance: σ^2 = 1/λ^2
 
-# Binomial distribution
+# Binomial distribution (with replacement)
 
 # Binary outcome: Either success or failure.
 # Fixed number of trials.
@@ -99,10 +99,10 @@ options(digits=11)
 # Mean: μ = n * p
 # Variance: α^2 = n*p*(1-p)
 
-# Hypergeometric distribution
+# Hypergeometric distribution (Without replacement)
 
 # dhyper(x, a, N-a, n-x) Calculates probability mass function (PMF) and returns the probability of drawing exactly X white balls.
-# x = probability of x successes drawn (white balls)
+# x = probability of x successes drawn (What they are asking for, for example "Whats the probability of drawing 8 white balls?").
 # a = number of white balls in the urn (successes)
 # N-a = number of black balls in the urn (failures)
 # n-x = number of balls drawn from the urn.
