@@ -212,6 +212,7 @@ options(digits=11)
 # data <- rbind(unemployed, employed)
 # chisq.test(data, correct = FALSE)
 # p-value: 1-pchiq(x-squared, df)
+# where df = (r−1)(c−1) Where r = rows, c = columns.
 
 #######################################################################################################################
 
