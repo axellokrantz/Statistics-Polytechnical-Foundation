@@ -252,6 +252,15 @@ options(digits=11)
 # Parametric = Simulate multiple samples from an assumed distribution.
 # Non parametric = Simulate samples from already existing observations.
 
+# Comparing differences (mean, median, standard deviation) in parametric bootstrapping:
+
+# rdist = chosen distribution to generate from
+# Use mean and sd to generate (not var for example)
+# samplesA <- replicate(nr_of_samples, rdist, mean(setA), sd(setB))
+# samplesB <- replicate(nr_of_samples, rdist, mean(setA), sd(setB))
+# simDifs  <- apply(samplesA, 2(?), mean_median_or_sd) - apply(samplesB, 2(?), mean_median_or_sd) 
+# quantile(simDifs, c(0.025, 0.975)) # 95% conf int
+
 #######################################################################################################################
 
 # ANOVA
