@@ -147,7 +147,7 @@ options(digits=11)
 # If p value < alpha value we reject the H0 hypothesis that there is no difference.
 
 # One sample t-test
-# Sample size formula (how many observations needed): n <- (sd*(qnorm(1-sig)+qnorm(1-beta))/ME)^2
+# Sample size formula (how many observations needed): n <- (sd*(qnorm(1-(sig/2))+qnorm(1-beta))/ME)^2
 # sig = significance (0.05 for example)
 # sd = standard deviation.
 # power = statistical power (1 - beta). Likelihood of a significance test detecting
