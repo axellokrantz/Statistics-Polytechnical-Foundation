@@ -141,8 +141,8 @@ options(digits=11)
 # With the null hypothesis H0 = mean = 0
 # If confidence interval does NOT contain 0 we reject the null hypothesis.
 # If confidence interval contains 0 we we fail to reject the null hypothesis. (Cannot conclude that one is better than the other)
-
 # If t value > t critical value we reject the null hypothesis based on alpha. (No p-value needed then).
+# If p value < alpha value we reject the H0 hypothesis that there is no difference.
 
 # One sample t-test
 # Degrees of freedom: n - 1 where n is the sample size.
@@ -173,15 +173,18 @@ options(digits=11)
 # post_treatment <- c(2,3,4,5,6)
 # result <- t.test(pre_treatment, post_treatment, paired = TRUE)
 
-# Two sample t-test
+# Two sample t-test (Welch two sample t-test)
 # Degrees of freedom when the variances of the two populations are assumed to be the same: (n1 + n2 - 2)
 # Degrees of freedom otherwise = df <- ((sd1^2/n1 + sd2^2/n2)^2) / ((sd1^4/(n1^2*(n1-1)) + sd2^4/(n2^2*(n2-1))))
 # Compare means of two different groups, avg height of men differs from avg height of women.
-# t.test(x2, x1, paired = FALSE)
+# t.test(x2, x1)
 
 # Calculate degrees of freedom for two sample confidence interval.
 # Where sd = standard deviation and sd^2 = variance.
 # df <- ((sd1^2/n1 + sd2^2/n2)^2) / ((sd1^4/(n1^2*(n1-1)) + sd2^4/(n2^2*(n2-1))))
+
+# p value for test statistic
+# 2*(1-pt(tstatistic, df))
 
 # Power t-test
 
@@ -193,7 +196,7 @@ options(digits=11)
 # power = power of test
 # type = "one.sample", "two.sample", "paired"
 
-# Pearsons chisquare test:
+# Pearsons chisquare test (X^2):
 
 # Used in hypothesis testing to compare observed data with data we would expect to obtain according to
 # a specific hypothesis. 
@@ -207,11 +210,8 @@ options(digits=11)
 # unemployed <- c(10, 15, ...)
 # employed <- c(24, 32, ...)
 # data <- rbind(unemployed, employed)
-# chisq.test(data)
-# unemployed <- c(10, 15, ...)
-# employed <- c(24, 32, ...)
-# data <- rbind(unemployed, employed)
-# chisq.test(data)
+# chisq.test(data, correct = FALSE)
+# p-value: 1-pchiq(tstatistic, df)
 
 #######################################################################################################################
 
@@ -281,7 +281,7 @@ options(digits=11)
 # Confidence interval for 1 proportion
 
 # x = (x number out of total)
-# n = (total)
+# n = (total,  including x)
 # phat = x/n
 # phat-qnorm(1-alpha/2)*sqrt((phat*(1-phat)/n))
 # phat+qnorm(1-alpha/2)*sqrt((phat*(1-phat)/n))
