@@ -302,6 +302,7 @@ options(digits=11)
 # Number of observations: k * l
 # p-value: 1 - pf(fstatistic, df(attribute), df(residual))
 
+
 #######################################################################################################################
 
 # Proportions
