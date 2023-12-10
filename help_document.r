@@ -165,7 +165,6 @@ options(digits=11)
 # CI = sample_mu +- t1-a/2 * SEM
 # in R: sample_mu + c(-1,1) * qt(1-alpha, df=df) * SEM
 
-
 # Paired t-test = one-sample analysis
 # Degrees of freedom: n-1 where n is the number of pairs.
 # Test used to compare a single population before and after som experiment or at two
@@ -291,3 +290,15 @@ options(digits=11)
 
 # (phat1 - phat2) + qnorm(0.975)*sqrt((phat1*(1-phat1)/n1)+(phat2*(1-phat2)/n2))
 # (phat1 - phat2) - qnorm(0.975)*sqrt((phat1*(1-phat1)/n1)+(phat2*(1-phat2)/n2))
+
+#######################################################################################################################
+
+# Derivative
+
+# f <- expression(x^2 + 3*x + 2)
+# f_prime <- deriv(f, "x")
+# print(f_prime)
+
+#######################################################################################################################
+
+# Confidence interval for mean
