@@ -1,6 +1,5 @@
 options(digits=11)
 # Help document 
-
 #######################################################################################################################
 
 #Distributions
@@ -183,6 +182,10 @@ options(digits=11)
 # employed <- c(24, 32, ...)
 # data <- rbind(unemployed, employed)
 # chisq.test(data)
+# unemployed <- c(10, 15, ...)
+# employed <- c(24, 32, ...)
+# data <- rbind(unemployed, employed)
+# chisq.test(data)
 
 #######################################################################################################################
 
@@ -200,7 +203,7 @@ options(digits=11)
 # 0: No correlation. There is no relationship between the variables.
 # Between 0 and -1: Negative correlation: When one variable changes, the other variables changes in the opposite direction.
 
-# Number of observations in the study.
+# Number of observations in the study:
 # Degrees of freedom: Numbers of data points that are free to vary after the model has been fitted, i.e. the
 # number of observations minus the number of estimated parameters.
 # Calculated: So if we have (intercept), x1, x2 we take Df for residuals + number of parameters = df + 3.
@@ -208,7 +211,8 @@ options(digits=11)
 # Larger t values correspond to smaller p values, indicating greater significance.
 # Very small p values correspond to significant relationship between variable x and y. 
 
-# two-tailed p-value: 2*(1-pt(t-value, df)) H0 = 0.
+# p-value: 2*(1-pt(t-value, df)) H0 = 0.
+# Where df = the df of the attribute.
 
 #######################################################################################################################
 
@@ -264,3 +268,8 @@ options(digits=11)
 
 # (phat1 - phat2) + qnorm(0.975)*sqrt((phat1*(1-phat1)/n1)+(phat2*(1-phat2)/n2))
 # (phat1 - phat2) - qnorm(0.975)*sqrt((phat1*(1-phat1)/n1)+(phat2*(1-phat2)/n2))
+
+# Expected counts for k (Table)
+# eij = ((i'th row total) * (j'th column total))/total
+
+eij <- (416 * 1085) / 1268
