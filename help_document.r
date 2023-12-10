@@ -153,6 +153,7 @@ options(digits=11)
 # power = statistical power (1 - beta). Likelihood of a significance test detecting
 # an effect when there actually is one. It is sometimes also called sensitivity.
 # beta = typically 0.2 (probability of committing a Type II error which is failing to reject the null hypothesis when its actually false.
+# ME = difference in mean.
 
 # Degrees of freedom: n - 1 where n is the sample size.
 # Used to compare a single population to a standard value. For example determine whether the avg.
