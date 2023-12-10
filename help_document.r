@@ -183,6 +183,9 @@ options(digits=11)
 # Where sd = standard deviation and sd^2 = variance.
 # df <- ((sd1^2/n1 + sd2^2/n2)^2) / ((sd1^4/(n1^2*(n1-1)) + sd2^4/(n2^2*(n2-1))))
 
+# p value for test statistic
+# 2*(1-pt(tstatistic, df))
+
 # Power t-test
 
 #power.t.test()
