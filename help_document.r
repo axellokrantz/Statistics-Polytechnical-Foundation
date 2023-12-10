@@ -75,7 +75,9 @@ options(digits=11)
 # Mean: μ = 1/λ
 # Variance: σ^2 = 1/λ^2
 
-# Binomial distribution
+# Binomial distribution (with replacement)
+# “at least” two, so it is one minus the probability of ’less
+# than or equal to 1’
 
 # Binary outcome: Either success or failure.
 # Fixed number of trials.
@@ -99,10 +101,10 @@ options(digits=11)
 # Mean: μ = n * p
 # Variance: α^2 = n*p*(1-p)
 
-# Hypergeometric distribution
+# Hypergeometric distribution (Without replacement)
 
 # dhyper(x, a, N-a, n-x) Calculates probability mass function (PMF) and returns the probability of drawing exactly X white balls.
-# x = probability of x successes drawn (white balls)
+# x = probability of x successes drawn (What they are asking for, for example "Whats the probability of drawing 8 white balls?").
 # a = number of white balls in the urn (successes)
 # N-a = number of black balls in the urn (failures)
 # n-x = number of balls drawn from the urn.
@@ -139,12 +141,20 @@ options(digits=11)
 # Hypthesis Testing
 
 # With the null hypothesis H0 = mean = 0
-# If confidence interval does NOT contain 0 we reject the null hypothesis.
+# If confidence interval does NOT contain 0 we reject the null hypothesis!
 # If confidence interval contains 0 we we fail to reject the null hypothesis. (Cannot conclude that one is better than the other)
 # If t value > t critical value we reject the null hypothesis based on alpha. (No p-value needed then).
 # If p value < alpha value we reject the H0 hypothesis that there is no difference.
 
 # One sample t-test
+# Sample size formula (how many observations needed): n <- (sd*(qnorm(1-(sig/2))+qnorm(1-beta))/ME)^2
+# sig = significance (0.05 for example)
+# sd = standard deviation.
+# power = statistical power (1 - beta). Likelihood of a significance test detecting
+# an effect when there actually is one. It is sometimes also called sensitivity. If power is 45, then there is a 65% chance of making a type 2 error.
+# beta = typically 0.2 (probability of committing a Type II error which is failing to reject the null hypothesis when its actually false.
+# ME = difference in mean.
+
 # Degrees of freedom: n - 1 where n is the sample size.
 # Used to compare a single population to a standard value. For example determine whether the avg.
 # lifespan of a specific town is different from the country average. 
@@ -188,9 +198,9 @@ options(digits=11)
 
 # Power t-test
 
-#power.t.test()
+# power.t.test(delta = delta, power = power, sig.level = alpha, type="one.sample")
 # n = number of observations for 1 group
-# delta = true difference in mean
+# delta = true difference in mean.
 # sd = standard deviation
 # sig.level = significance level
 # power = power of test
@@ -217,9 +227,11 @@ options(digits=11)
 #######################################################################################################################
 
 # Linear Regression Model
+# Simple model: Y = B0 + B1*x1 + ... + e (residual)
 
-# The coefficient of determination (R^2 percent) is a measure that indicates how well a statsitical model predicts an outcome
-# Its a number between 0 and 1. How to interpret it:
+# The coefficient of determination (R^2 percent, amount of variance explained by the model):
+# Is a measure that indicates how well a statsitical model predicts an outcome. Its a number between 0 and 1.
+# How to interpret it:
 # 0: The model does not predict the outcome
 # Between 1 and 0: The model partially predicts the outcoem.
 # 1: The model prefectly predicts the outcome.
@@ -287,7 +299,6 @@ options(digits=11)
 # anova_table <- summary(model)
 # anova_table
 
-# Number of observations: n
 # p-value: 1 - pf(fstatistic, df(attribute), df(residual))
 # Total variance: SST = SSE + SS(Tr)
 # Estimated effect of treatment x1 (alphaB)
@@ -295,12 +306,13 @@ options(digits=11)
 
 # Post Hoc Analysis:
 # No bonferroni is required if we are doing one pre-specified comparison.
-# (yhat1 - yhat2) + qt(0.975, df)*sqrt((SSE/(n-k))*(1/n1 + 1/nj))
+# (yhat1 - yhat2) - qt(0.975, df)*sqrt(MSE*(1/n1 + 1/n2))
 # df = n - k, SSE = variance, yhat = mean
 
 # Two way ANOVA
 # Number of observations: k * l
 # p-value: 1 - pf(fstatistic, df(attribute), df(residual))
+
 
 #######################################################################################################################
 
@@ -331,6 +343,13 @@ options(digits=11)
 # Expected counts for k (Table)
 # eij = ((i'th row total) * (j'th column total))/total
 
+# Proportion.test
+
+# Define your counts of successes and trials
+# x <- c(10, 20) # replace with your counts of successes
+# n <- c(50, 100) # replace with your counts of trials
+# result <- prop.test(x, n), conf.level can be added: conf.level = 0.95
+
 #######################################################################################################################
 
 # Derivative
@@ -349,3 +368,9 @@ options(digits=11)
 
 # cl1 <- xhat + qt(q, df) * s/sqrt(n)
 # cl2 <- xhat - qt(q, df) * s/sqrt(n)
+
+# IQR <- Q1 - Q3
+# The Interquartile Range (IQR) is a statistical measure used to describe the spread
+# or variability within a data set.
+
+# Coefficient of variation: sd / mean.
