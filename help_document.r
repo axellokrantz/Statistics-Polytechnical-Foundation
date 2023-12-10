@@ -264,12 +264,25 @@ options(digits=11)
 # in the model prediction.
 
 # One way ANOVA
+# Example code:
+
+# y <- c(1, 2, 3, 4, 5, 6, 7, 8, 9)
+# treatments <-
+#   as.factor(c("A", "A", "A", "B", "B", "B", "C", "C", "C",)) 
+# model <- aov(logt ~ treatments)
+# anova_table <- summary(model)
+# anova_table
 
 # Number of observations: n
 # p-value: 1 - pf(fstatistic, df(attribute), df(residual))
-# Total variance:
-# SST = SSE + SS(Tr)
+# Total variance: SST = SSE + SS(Tr)
+# Estimated effect of treatment x1 (alphaB)
+# mean(alphaB) - mean(alphaN). Where mean(alphaN) is the mean of all observations.
 
+# Post Hoc Analysis:
+# No bonferroni is required if we are doing one pre-specified comparison.
+# (yhat1 - yhat2) + pt(0.975, df)*sqrt((SSE/(n-k))*(1/n1 + 1/nj))
+# df = n - k, SSE = variance, yhat = mean
 
 # Two way ANOVA
 # Number of observations: k * l
