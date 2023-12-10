@@ -139,7 +139,7 @@ options(digits=11)
 # Hypthesis Testing
 
 # With the null hypothesis H0 = mean = 0
-# If confidence interval does NOT contain 0 we reject the null hypothesis.
+# If confidence interval does NOT contain 0 we reject the null hypothesis!
 # If confidence interval contains 0 we we fail to reject the null hypothesis. (Cannot conclude that one is better than the other)
 # If t value > t critical value we reject the null hypothesis based on alpha. (No p-value needed then).
 # If p value < alpha value we reject the H0 hypothesis that there is no difference.
@@ -352,3 +352,5 @@ options(digits=11)
 # IQR <- Q1 - Q3
 # The Interquartile Range (IQR) is a statistical measure used to describe the spread
 # or variability within a data set.
+
+# Coefficient of variation: sd / mean.
