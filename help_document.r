@@ -298,8 +298,6 @@ options(digits=11)
 # Expected counts for k (Table)
 # eij = ((i'th row total) * (j'th column total))/total
 
-eij <- (416 * 1085) / 1268
-
 #######################################################################################################################
 
 # Derivative
