@@ -196,7 +196,7 @@ options(digits=11)
 # power = power of test
 # type = "one.sample", "two.sample", "paired"
 
-# Pearsons chisquare test:
+# Pearsons chisquare test (X^2):
 
 # Used in hypothesis testing to compare observed data with data we would expect to obtain according to
 # a specific hypothesis. 
@@ -207,10 +207,6 @@ options(digits=11)
 # 3. Test of homogenity: Compare the distribution of categorical variables in more than one population. 
 # Example: difference in the distribution of blood types in two different countries.
 # R example:
-# unemployed <- c(10, 15, ...)
-# employed <- c(24, 32, ...)
-# data <- rbind(unemployed, employed)
-# chisq.test(data)
 # unemployed <- c(10, 15, ...)
 # employed <- c(24, 32, ...)
 # data <- rbind(unemployed, employed)
