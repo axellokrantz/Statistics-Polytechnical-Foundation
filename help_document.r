@@ -276,7 +276,7 @@ options(digits=11)
 # Confidence interval for 1 proportion
 
 # x = (x number out of total)
-# n = (total)
+# n = (total,  including x)
 # phat = x/n
 # phat-qnorm(1-alpha/2)*sqrt((phat*(1-phat)/n))
 # phat+qnorm(1-alpha/2)*sqrt((phat*(1-phat)/n))
