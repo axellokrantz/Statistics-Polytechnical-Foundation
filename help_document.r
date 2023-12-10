@@ -215,7 +215,7 @@ options(digits=11)
 
 #######################################################################################################################
 
-# Linnear Regression Model
+# Linear Regression Model
 
 # The coefficient of determination (R^2 percent) is a measure that indicates how well a statsitical model predicts an outcome
 # Its a number between 0 and 1. How to interpret it:
@@ -239,6 +239,11 @@ options(digits=11)
 
 # p-value: 2*(1-pt(t-value, df)) H0 = 0.
 # Where df = the df of the attribute.
+
+
+# Multiple Linear Regression Model
+
+# df = n - (p + 1)
 
 #######################################################################################################################
 
