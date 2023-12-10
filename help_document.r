@@ -315,6 +315,7 @@ options(digits=11)
 # phat+qnorm(1-alpha/2)*sqrt((phat*(1-phat)/n))
 
 # Confidence interval for difference in two proportions.
+# Difference between x1 - x2:
 
 # x1 = number in group1
 # x2 = number in group2
