@@ -139,6 +139,17 @@ options(digits=11)
 # dif = x2 - x1
 # t.test(dif)
 
+# Calculate confidence interval using sample mean and t-statistic:
+# SEM = Standard error
+# t-statistic = sample_mu - hypothesis_mu / SEM
+# hypothesis_mu = 0, since we are testing if the mean is different from zero
+# This can be rearranged like: 
+# SEM = sample_mu / t-statistic
+# Now we can calculate the standard error to be used in calculating the confidence interval
+# CI = sample_mu +- t1-a/2 * SEM
+# in R: sample_mu + c(-1,1) * qt(1-alpha, df=df) * SEM
+
+
 # Paired t-test = one-sample analysis
 # Degrees of freedom: n-1 where n is the number of pairs.
 # Test used to compare a single population before and after som experiment or at two
