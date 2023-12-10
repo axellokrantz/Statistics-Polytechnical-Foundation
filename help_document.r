@@ -76,6 +76,8 @@ options(digits=11)
 # Variance: σ^2 = 1/λ^2
 
 # Binomial distribution (with replacement)
+# “at least” two, so it is one minus the probability of ’less
+# than or equal to 1’
 
 # Binary outcome: Either success or failure.
 # Fixed number of trials.
