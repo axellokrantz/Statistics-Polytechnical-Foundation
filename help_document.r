@@ -295,12 +295,11 @@ options(digits=11)
 # (phat1 - phat2) + qnorm(0.975)*sqrt((phat1*(1-phat1)/n1)+(phat2*(1-phat2)/n2))
 # (phat1 - phat2) - qnorm(0.975)*sqrt((phat1*(1-phat1)/n1)+(phat2*(1-phat2)/n2))
 
-<<<<<<< HEAD
 # Expected counts for k (Table)
 # eij = ((i'th row total) * (j'th column total))/total
 
 eij <- (416 * 1085) / 1268
-=======
+
 #######################################################################################################################
 
 # Derivative
@@ -312,4 +311,4 @@ eij <- (416 * 1085) / 1268
 #######################################################################################################################
 
 # Confidence interval for mean
->>>>>>> b3548f97cf61f3290968ef8b79d41648bd38ede8
+
