@@ -310,3 +310,9 @@ options(digits=11)
 
 # Confidence interval for mean
 
+# xhat <- Mean
+# s <- Standard deviation
+# n <- Number of observations
+
+# cl1 <- xhat + qt(q, df) * s/sqrt(n)
+# cl2 <- xhat - qt(q, df) * s/sqrt(n)
