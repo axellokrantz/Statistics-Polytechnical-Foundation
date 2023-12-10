@@ -147,7 +147,13 @@ options(digits=11)
 # If p value < alpha value we reject the H0 hypothesis that there is no difference.
 
 # One sample t-test
-# Sample size formula (how many observations needed): n <- 
+# Sample size formula (how many observations needed): n <- (sd*(qnorm(1-sig)+qnorm(1-beta))/ME)^2
+# sig = significance (0.05 for example)
+# sd = standard deviation.
+# power = statistical power (1 - beta). Likelihood of a significance test detecting
+# an effect when there actually is one. It is sometimes also called sensitivity.
+# beta = typically 0.2 (probability of committing a Type II error which is failing to reject the null hypothesis when its actually false.
+
 # Degrees of freedom: n - 1 where n is the sample size.
 # Used to compare a single population to a standard value. For example determine whether the avg.
 # lifespan of a specific town is different from the country average. 
