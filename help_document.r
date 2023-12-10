@@ -131,6 +131,9 @@ options(digits=11)
 # It returns the value of the random variable such that the probability of the variable being less than or equal to that value equals the given probability p. 
 # For example, qchisq(0.95, 1) returns the 95% quantile of the chi-square distribution with 1 degree of freedom.
 
+# Mean: μ = df
+# Variance: α^2 = 2*df
+
 #######################################################################################################################
 
 # Hypthesis Testing
