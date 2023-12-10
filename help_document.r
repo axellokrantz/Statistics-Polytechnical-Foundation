@@ -263,8 +263,12 @@ options(digits=11)
 # in the model prediction.
 
 # One way ANOVA
+
 # Number of observations: n
 # p-value: 1 - pf(fstatistic, df(attribute), df(residual))
+# Total variance:
+# SST = SSE + SS(Tr)
+
 
 # Two way ANOVA
 # Number of observations: k * l
