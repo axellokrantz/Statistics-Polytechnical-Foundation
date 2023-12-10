@@ -217,9 +217,11 @@ options(digits=11)
 #######################################################################################################################
 
 # Linear Regression Model
+# Simple model: Y = B0 + B1*x1 + ... + e (residual)
 
-# The coefficient of determination (R^2 percent) is a measure that indicates how well a statsitical model predicts an outcome
-# Its a number between 0 and 1. How to interpret it:
+# The coefficient of determination (R^2 percent, amount of variance explained by the model):
+# Is a measure that indicates how well a statsitical model predicts an outcome. Its a number between 0 and 1.
+# How to interpret it:
 # 0: The model does not predict the outcome
 # Between 1 and 0: The model partially predicts the outcoem.
 # 1: The model prefectly predicts the outcome.
@@ -287,7 +289,6 @@ options(digits=11)
 # anova_table <- summary(model)
 # anova_table
 
-# Number of observations: n
 # p-value: 1 - pf(fstatistic, df(attribute), df(residual))
 # Total variance: SST = SSE + SS(Tr)
 # Estimated effect of treatment x1 (alphaB)
