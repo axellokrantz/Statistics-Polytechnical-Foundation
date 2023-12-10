@@ -210,7 +210,7 @@ options(digits=11)
 # unemployed <- c(10, 15, ...)
 # employed <- c(24, 32, ...)
 # data <- rbind(unemployed, employed)
-# chisq.test(data)
+# chisq.test(data, correct = FALSE)
 
 #######################################################################################################################
 
