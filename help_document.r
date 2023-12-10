@@ -348,3 +348,7 @@ options(digits=11)
 
 # cl1 <- xhat + qt(q, df) * s/sqrt(n)
 # cl2 <- xhat - qt(q, df) * s/sqrt(n)
+
+# IQR <- Q1 - Q3
+# The Interquartile Range (IQR) is a statistical measure used to describe the spread
+# or variability within a data set.
