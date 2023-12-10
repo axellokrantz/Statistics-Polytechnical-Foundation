@@ -173,7 +173,7 @@ options(digits=11)
 # post_treatment <- c(2,3,4,5,6)
 # result <- t.test(pre_treatment, post_treatment, paired = TRUE)
 
-# Two sample t-test
+# Two sample t-test (Welch two sample t-test)
 # Degrees of freedom when the variances of the two populations are assumed to be the same: (n1 + n2 - 2)
 # Degrees of freedom otherwise = df <- ((sd1^2/n1 + sd2^2/n2)^2) / ((sd1^4/(n1^2*(n1-1)) + sd2^4/(n2^2*(n2-1))))
 # Compare means of two different groups, avg height of men differs from avg height of women.
