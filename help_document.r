@@ -118,7 +118,7 @@ options(digits=11)
 # Mean: μ = n * a/N
 # Variance: α^2 = na*(N-a)(N-n)/N^2*(N-1)
 
-# A Chi-Square Distribution (X^2)
+# A Chi-Square Distribution (X^2, Asymetric - Probability = 0.95 for alpha = 0.05)
 # Is a type of probability distribution that is used in hypothesis testing and is based on a normally distributed random variable.
 # It is used in various statistical applications involving degrees of freedom.
 
