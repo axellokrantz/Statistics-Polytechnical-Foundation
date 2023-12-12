@@ -197,13 +197,13 @@ options(digits=11)
 
 # Power t-test
 
-# power.t.test(delta = delta, power = power, sig.level = alpha, type="one.sample")
+# power.t.test(delta = delta, sd = sd, power = power, sig.level = sig.level, type = type)
 # n = number of observations for 1 group
 # delta = true difference in mean.
 # sd = standard deviation
 # sig.level = significance level
 # power = power of test
-# type = "one.sample", "two.sample", "paired"
+# type = "one.sample", "two.sample", "paired" (can be disregarded)
 
 # Pearsons chisquare test (X^2):
 
