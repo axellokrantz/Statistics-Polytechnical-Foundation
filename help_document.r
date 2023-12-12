@@ -328,12 +328,12 @@ options(digits=11)
 # x2 = number in group2
 # n1 = total in group 1
 # n2 = total in group 2
-
+# alpha = alpha level
 # phat1 = x1/n1
 # phat2 = x2/n2
 
-# (phat1 - phat2) + qnorm(0.975)*sqrt((phat1*(1-phat1)/n1)+(phat2*(1-phat2)/n2))
-# (phat1 - phat2) - qnorm(0.975)*sqrt((phat1*(1-phat1)/n1)+(phat2*(1-phat2)/n2))
+# (phat1 - phat2) + qnorm(alpha)*sqrt((phat1*(1-phat1)/n1)+(phat2*(1-phat2)/n2))
+# (phat1 - phat2) - qnorm(alpha)*sqrt((phat1*(1-phat1)/n1)+(phat2*(1-phat2)/n2))
 
 # Expected counts for k (Table)
 # eij = ((i'th row total) * (j'th column total))/total
@@ -342,7 +342,7 @@ options(digits=11)
 # sd = sqrt((p(1-p))/n)
 # Where p = x/n.
 
-# Proportion.test
+# Proportion.test H0: p1 = p2
 
 # Define your counts of successes and trials
 # x <- c(10, 20) # replace with your counts of successes
