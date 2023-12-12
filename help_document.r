@@ -338,6 +338,10 @@ options(digits=11)
 # Expected counts for k (Table)
 # eij = ((i'th row total) * (j'th column total))/total
 
+# Standard Error of estimated proportion
+# sd = sqrt((p(1-p))/n)
+# Where p = x/n.
+
 # Proportion.test
 
 # Define your counts of successes and trials
