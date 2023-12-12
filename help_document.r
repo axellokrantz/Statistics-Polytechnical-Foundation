@@ -154,15 +154,13 @@ options(digits=11)
 # an effect when there actually is one. It is sometimes also called sensitivity. If power is 45, then there is a 65% chance of making a type 2 error.
 # beta = typically 0.2 (probability of committing a Type II error which is failing to reject the null hypothesis when its actually false.
 # ME = difference in mean.
-
 # Degrees of freedom: n - 1 where n is the sample size.
-# Used to compare a single population to a standard value. For example determine whether the avg.
-# lifespan of a specific town is different from the country average. 
-# If you want to test wether the avg. height of a certain group of people differs from the known avg of all people.
-# x1 = c(7, 12, ...)
-# x2 = c(1, 2, ...)
-# dif = x2 - x1
-# t.test(dif)
+
+# t.test(x) H0: mean = 0.
+# If you want to test a different hypothesis, for example that mu = 10000.
+# data <- c(12, 13, 14, 15, 16)  # your data
+# mu <- 15  # known population mean
+# t_test_result <- t.test(data, mu = 10000)
 
 # Calculate confidence interval using sample mean and t-statistic:
 # SEM = Standard error
