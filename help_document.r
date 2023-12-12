@@ -189,10 +189,6 @@ options(digits=11)
 # Compare means of two different groups, avg height of men differs from avg height of women.
 # t.test(x2, x1)
 
-# Calculate degrees of freedom for two sample confidence interval.
-# Where sd = standard deviation and sd^2 = variance.
-# df <- ((sd1^2/n1 + sd2^2/n2)^2) / ((sd1^4/(n1^2*(n1-1)) + sd2^4/(n2^2*(n2-1))))
-
 # p value for test statistic
 # 2*(1-pt(tstatistic, df))
 
