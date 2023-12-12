@@ -356,6 +356,8 @@ options(digits=11)
 
 #######################################################################################################################
 
+# MISCELLANOUS
+
 # Confidence interval for mean
 
 # xhat <- Mean
@@ -370,3 +372,8 @@ options(digits=11)
 # or variability within a data set.
 
 # Coefficient of variation: sd / mean.
+
+
+# Pooled variance (see pdf page 108) 
+# Assume that the true variance between the samples are the same.
+# n1 and n2 in the formula is the two groups, n1 = n2 = # of groups
