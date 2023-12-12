@@ -328,7 +328,7 @@ options(digits=11)
 # x2 = number in group2
 # n1 = total in group 1
 # n2 = total in group 2
-# alpha = alpha level
+# alpha = 1 - alpha/2
 # phat1 = x1/n1
 # phat2 = x2/n2
 
