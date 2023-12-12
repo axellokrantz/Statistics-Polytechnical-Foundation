@@ -138,7 +138,7 @@ options(digits=11)
 
 #######################################################################################################################
 
-# Hypthesis Testing
+# Hypothesis Testing
 
 # With the null hypothesis H0 = mean = 0
 # If confidence interval does NOT contain 0 we reject the null hypothesis!
@@ -217,6 +217,9 @@ options(digits=11)
 # chisq.test(data, correct = FALSE)
 # p-value: 1-pchiq(x-squared, df)
 # where df = (r−1)(c−1) Where r = rows, c = columns.
+
+# P("Type I error") = P("Rejection of H0 when H0 is true") = alpha = (usually) 0.05
+# The type I error is equal to the significance level
 
 #######################################################################################################################
 
