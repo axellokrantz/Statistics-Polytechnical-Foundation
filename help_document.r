@@ -356,6 +356,7 @@ options(digits=11)
     # xhat <- Mean
     # s <- Standard deviation
     # n <- Number of observations
+    # df <- n - 1
     # cl1 <- xhat + qt(q, df) * s/sqrt(n)
     # cl2 <- xhat - qt(q, df) * s/sqrt(n)
 
