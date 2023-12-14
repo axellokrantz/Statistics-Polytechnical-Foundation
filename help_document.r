@@ -218,7 +218,7 @@ options(digits=11)
 
 #######################################################################################################################
 
-# Linnear Regression Model
+# Linear Regression Model
     # Simple model: Y = B0 + B1*x1 + ... + e (residual)
     
     # The coefficient of determination (R^2 percent, amount of variance explained by the model):
@@ -249,6 +249,22 @@ options(digits=11)
     # df = n - (p + 1)
     # n is the total number of observations,
     # p is the number of predictor variables in the model.
+
+    # Prediction interval for new observation 5
+        # predict(fit,
+        #        newdata=data.frame(x=c(5)),
+        #       interval="prediction",
+        #        level=0.95)
+
+    # Confidence interval
+        # predict(fit,
+        #       newdata=data.frame(x=c(5)),
+        #       interval="confidence",
+        #       level=0.95)
+
+    # Parameter confidence interval
+
+        # confint(fit,level=0.95)
 
 #######################################################################################################################
 
