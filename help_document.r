@@ -136,7 +136,7 @@ options(digits=11)
     # With the null hypothesis H0 = mean = 0
     # If confidence interval does NOT contain 0 we reject the null hypothesis!
     # If confidence interval contains 0 we we fail to reject the null hypothesis. (Cannot conclude that one is better than the other)
-    # If t value > t critical value we reject the null hypothesis based on alpha. (No p-value needed then).
+    # If t value > t critical value we reject the null hypothesis based on alpha. (No p-value needed then). 
     # If p value < alpha value we reject the H0 hypothesis that there is no difference.
 
 # One sample t-test
@@ -149,15 +149,20 @@ options(digits=11)
     # ME = difference in mean.
     # Degrees of freedom: n - 1 where n is the sample size.
     
-    # t.test(x) H0: mean = 0.
-    # If you want to test a different hypothesis, for example that mu = 10000.
-    # data <- c(12, 13, 14, 15, 16)  # your data
-    # mu <- 15  # known population mean
-    # t_test_result <- t.test(data, mu = 10000)
+    # If you want to test a different hypothesis other than H0: mean = 0, for example that mu = 10000.
+        # data <- c(12, 13, 14, 15, 16)  # your data
+        # mu <- 15  # known population mean (BEHÅLLA DENNA RAD?)
+        # t_test_result <- t.test(data, mu = 10000)
 
-# Calculate confidence interval using sample mean and t-statistic:
-    # SEM = Standard error
-    # t-statistic = sample_mu - hypothesis_mu / SEM
+    # Calculate the test statistic
+        # sd <- standard deviation
+        # n <- number of observations 
+        # standard_error <- sd/sqrt(n) 
+        # tobs <- (sample_mean - hypothesis_mean)/standard_error
+
+# Calculate confidence interval using sample mean and t-statistic: (KOLLA MED AKKE OCH BEKRÄFTA ALLT DETTA)
+    # SEM = Standard error 
+    # t-statistic = sample_mu - hypothesis_mu / SEM 
     # hypothesis_mu = 0, since we are testing if the mean is different from zero
     # This can be rearranged like: 
     # SEM = sample_mu / t-statistic
