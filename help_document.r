@@ -392,8 +392,9 @@ options(digits=11)
     # s <- Standard deviation
     # n <- Number of observations
     # df <- n - 1
-    # cl1 <- xhat + qt(q, df) * s/sqrt(n)
-    # cl2 <- xhat - qt(q, df) * s/sqrt(n)
+    # alpha <- (0.05 for example)
+    # cl1 <- xhat + qt(1-alpha/2, df) * s/sqrt(n)
+    # cl2 <- xhat - qt(1-alpha/2, df) * s/sqrt(n)
 
 # IQR <- Q1 - Q3
     # The Interquartile Range (IQR) is a statistical measure used to describe the spread
