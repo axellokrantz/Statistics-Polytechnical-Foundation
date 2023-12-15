@@ -387,6 +387,9 @@ options(digits=11)
     # n <- c(50, 100) # replace with your counts of trials
     # result <- prop.test(x, n), conf.level can be added: conf.level = 0.95
 
+# Estimate of the probability p of belonging to a category:
+# phat <- x/n where x = number of observations in the category and n is the total number of observations.
+
 #######################################################################################################################
 
 # Derivative
