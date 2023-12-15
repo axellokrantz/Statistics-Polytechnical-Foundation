@@ -363,6 +363,8 @@ options(digits=11)
 # Two way ANOVA
     # Number of observations: k * l
     # p-value: 1 - pf(fstatistic, df(attribute), df(residual))
+    # fit <- lm(nitrogen ~ year, data=D)
+    # anova(fit)
 
 #######################################################################################################################
 
