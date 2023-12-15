@@ -2,7 +2,16 @@ options(digits=11)
 # Help document 
 #######################################################################################################################
 
-#Distributions
+# Distributions
+
+# If you have probability (area) but you want the value(s) (quantile) -> q
+# If you have the value(s) (quantile) but want the probability (area) -> p
+
+# p functions calculates the cumulative density (cdf), the area beneath a certain quantile.
+# Meaning that it gives the probability of "drawing" this value or less. Taking from a random variable.
+
+# q functions calculates the inverse of cdf. The value such that drawing this value or less than this
+# value is of the given probability.
 
 # Uniform distribution
     # A Uniform Distribution is a type of probability distribution in which all outcomes are equally likely. It’s graph is a rectangle,
