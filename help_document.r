@@ -299,6 +299,16 @@ options(digits=11)
 
         # confint(fit,level=0.95)
 
+    # Confidence interval for B1 (Same applies for B0, just use estimate of B0 and sigmahat for B0 instead.)
+
+    # B1 <- Read from table, "Estimate"
+    # alpha <- 0.05 for example
+    # sigmahat <- Read from table, "Standard error"
+    # df <- Can be read from table "Degrees of freedom"
+
+    # cl1 <- B1 + qt(1-alpha/2, df)*sigmahat
+    # cl2 <- B1 - qt(1-alpha/2, df)*sigmahat
+
 #######################################################################################################################
 
 # Simulation
