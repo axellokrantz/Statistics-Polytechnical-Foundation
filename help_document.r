@@ -186,7 +186,7 @@ options(digits=11)
     # Degrees of freedom: n-1 where n is the number of pairs.
     # Test used to compare a single population before and after som experiment or at two
     # different points in time. For example, measuring student performance on a test before
-    # and after being taught the material.
+    # and after being taught the material. Two measurements taken on the same group of subjects.
     # pre_treatment <- c(1,2,3,4,5)
     # post_treatment <- c(2,3,4,5,6)
     # result <- t.test(pre_treatment, post_treatment, paired = TRUE)
