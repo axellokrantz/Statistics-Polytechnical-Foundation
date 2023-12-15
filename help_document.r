@@ -169,8 +169,8 @@ options(digits=11)
         # standard_error <- sd/sqrt(n) 
         # tobs <- (sample_mean - hypothesis_mean)/standard_error
 
-# Calculate confidence interval using sample mean and t-statistic: (KOLLA MED AKKE OCH BEKRÄFTA ALLT DETTA)
-    # SEM = Standard error 
+# Calculate confidence interval using sample mean and t-statistic: 
+    # SEM = Standard error of the mean
     # t-statistic = sample_mu - hypothesis_mu / SEM 
     # hypothesis_mu = 0, since we are testing if the mean is different from zero
     # This can be rearranged like: 
