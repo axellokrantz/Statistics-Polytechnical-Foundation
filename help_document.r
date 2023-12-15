@@ -162,6 +162,8 @@ options(digits=11)
 # p-value for Zobs: 2*(1-pnorm(zobs))
 
 # One sample t-test
+    # It's used to determine whether the mean of a single sample differs significantly from a known or hypothesized population mean.
+    # For example: Testing if the average test scores of a group of students differ significantly from a national average.
     # Sample size formula (how many observations needed): n <- (sd*(qnorm(1-(sig/2))+qnorm(1-beta))/ME)^2
     # sig = significance (0.05 for example)
     # sd = standard deviation.
@@ -201,6 +203,7 @@ options(digits=11)
     # pre_treatment <- c(1,2,3,4,5)
     # post_treatment <- c(2,3,4,5,6)
     # result <- t.test(pre_treatment, post_treatment, paired = TRUE)
+    # can also be described as t.test(mean1 - mean2)
 
 # Two sample t-test 
     # Welch two sample t-test:
