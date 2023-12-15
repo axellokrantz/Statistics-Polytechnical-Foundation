@@ -358,6 +358,7 @@ options(digits=11)
     # No bonferroni is required if we are doing one pre-specified comparison.
     # (yhat1 - yhat2) - qt(0.975, df)*sqrt(MSE*(1/n1 + 1/n2))
     # df = n - k, SSE = variance, yhat = mean
+    # critical value in F-distribution qf(conf level(0.95 for example), df1, df2)
 
 # Two way ANOVA
     # Number of observations: k * l
