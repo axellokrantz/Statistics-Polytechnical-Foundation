@@ -239,6 +239,7 @@ options(digits=11)
     # data <- rbind(unemployed, employed)
     # chisq.test(data, correct = FALSE)
     # p-value: 1-pchiq(x-squared, df)
+    # critical value: qchisq(0.95, df)
     # where df = (r−1)(c−1) Where r = rows, c = columns.
 
 # P("Type I error") = P("Rejection of H0 when H0 is true") = alpha = (usually) 0.05
