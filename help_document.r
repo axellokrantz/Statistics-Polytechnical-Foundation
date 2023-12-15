@@ -150,6 +150,15 @@ options(digits=11)
     # A negative t-statistic means that the sample mean is below the null hypothesis value.
     # A positive t-statistic means that the sample mean is below the null hypothesis value.
 
+# Zobs (z-statistic)
+
+# X <- sample mean
+# μ <- population mean
+# σ <- poulation standard deviation
+# n <- sample size
+# Zobs <- (X - μ)/(σ/sqrt(n))
+# p-value for Zobs: 2*(1-pnorm(-abs(zobs)))
+
 # One sample t-test
     # Sample size formula (how many observations needed): n <- (sd*(qnorm(1-(sig/2))+qnorm(1-beta))/ME)^2
     # sig = significance (0.05 for example)
@@ -183,8 +192,8 @@ options(digits=11)
     # in R: sample_mu + c(-1,1) * qt(1-alpha, df=df) * SEM
 
 # Paired t-test = one-sample analysis
-    # Degrees of freedom: n-1 where n is the number of pairs.
-    # Test used to compare a single population before and after som experiment or at two
+    # Degrees of freedom: n-1 where n is the number of pairs. 
+    # Test used to compare a single population before and after some experiment or at two
     # different points in time. For example, measuring student performance on a test before
     # and after being taught the material. Two measurements taken on the same group of subjects.
     # pre_treatment <- c(1,2,3,4,5)
