@@ -215,7 +215,8 @@ options(digits=11)
     # varp <- ((n1-1)*var1+(n2-1)*var2) / (n1+n2-2) The pooled estimate of the standard deviation (under the assumption of equal variance) 
 
 # Power t-test
-    # power.t.test(delta = delta, sd = sd, power = power, sig.level = sig.level, type = type)
+    # HAS TO BE IN THE BELOW ORDER.
+    # power.t.test(n = number of observations, delta = delta, sd = sd, power = power, sig.level = sig.level, type = type)
     # n = number of observations for 1 group
     # delta = true difference in mean.
     # sd = standard deviation
