@@ -157,7 +157,7 @@ options(digits=11)
 # σ <- poulation standard deviation
 # n <- sample size
 # Zobs <- (X - μ)/(σ/sqrt(n))
-# p-value for Zobs: 2*(1-pnorm(-abs(zobs)))
+# p-value for Zobs: 2*(1-pnorm(zobs))
 
 # One sample t-test
     # Sample size formula (how many observations needed): n <- (sd*(qnorm(1-(sig/2))+qnorm(1-beta))/ME)^2
