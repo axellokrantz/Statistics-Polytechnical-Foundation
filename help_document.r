@@ -34,6 +34,7 @@ options(digits=11)
     # of the standard normal distribution.
 
 # Poisson distribution (Discrete version of Exponential Distribution)
+    # “at least” two, so it is one minus the probability of ’less than or equal to 1’
     # dpois(x, lambda) = Poisson Density Function. Returns the probability that a certain number of events (denoted by x)
     # occur in a fixed interval of time. Given fixed avg rate of occurence (lambda). For example, if a website is known to
     # make 10 sales per hour (lambda = 10), you can use dpois() to find the probability that the site makes exactly 8
@@ -81,8 +82,7 @@ options(digits=11)
     # Variance: σ^2 = 1/λ^2
 
 # Binomial distribution (with replacement)
-    # “at least” two, so it is one minus the probability of ’less
-    # than or equal to 1’
+    # “at least” two, so it is one minus the probability of ’less than or equal to 1’
     # Binary outcome: Either success or failure.
     # Fixed number of trials.
     # Independent trials, each trial is independent meaning one outcome does not affect another.
@@ -145,7 +145,7 @@ options(digits=11)
     # With the null hypothesis H0 = mean = 0
     # If confidence interval does NOT contain 0 we reject the null hypothesis!
     # If confidence interval contains 0 we we fail to reject the null hypothesis. (Cannot conclude that one is better than the other)
-    # If t value > t critical value we reject the null hypothesis based on alpha. (No p-value needed then).
+    # If t value > t critical value we reject the null hypothesis based on alpha. (No p-value needed then). 
     # If p value < alpha value we reject the H0 hypothesis that there is no difference.
 
 # One sample t-test
@@ -158,15 +158,20 @@ options(digits=11)
     # ME = difference in mean.
     # Degrees of freedom: n - 1 where n is the sample size.
     
-    # t.test(x) H0: mean = 0.
-    # If you want to test a different hypothesis, for example that mu = 10000.
-    # data <- c(12, 13, 14, 15, 16)  # your data
-    # mu <- 15  # known population mean
-    # t_test_result <- t.test(data, mu = 10000)
+    # If you want to test a different hypothesis other than H0: mean = 0, for example that mu = 10000.
+        # data <- c(12, 13, 14, 15, 16)  # your data
+        # mu <- 15  # known population mean (BEHÅLLA DENNA RAD?)
+        # t_test_result <- t.test(data, mu = 10000)
 
-# Calculate confidence interval using sample mean and t-statistic:
-    # SEM = Standard error
-    # t-statistic = sample_mu - hypothesis_mu / SEM
+    # Calculate the test statistic
+        # sd <- standard deviation
+        # n <- number of observations 
+        # standard_error <- sd/sqrt(n) 
+        # tobs <- (sample_mean - hypothesis_mean)/standard_error
+
+# Calculate confidence interval using sample mean and t-statistic: (KOLLA MED AKKE OCH BEKRÄFTA ALLT DETTA)
+    # SEM = Standard error 
+    # t-statistic = sample_mu - hypothesis_mu / SEM 
     # hypothesis_mu = 0, since we are testing if the mean is different from zero
     # This can be rearranged like: 
     # SEM = sample_mu / t-statistic
@@ -227,7 +232,7 @@ options(digits=11)
 
 #######################################################################################################################
 
-# Linnear Regression Model
+# Linear Regression Model
     # Simple model: Y = B0 + B1*x1 + ... + e (residual)
     
     # The coefficient of determination (R^2 percent, amount of variance explained by the model):
@@ -258,6 +263,22 @@ options(digits=11)
     # df = n - (p + 1)
     # n is the total number of observations,
     # p is the number of predictor variables in the model.
+
+    # Prediction interval for new observation 5
+        # predict(fit,
+        #        newdata=data.frame(x=c(5)),
+        #       interval="prediction",
+        #        level=0.95)
+
+    # Confidence interval
+        # predict(fit,
+        #       newdata=data.frame(x=c(5)),
+        #       interval="confidence",
+        #       level=0.95)
+
+    # Parameter confidence interval
+
+        # confint(fit,level=0.95)
 
 #######################################################################################################################
 
