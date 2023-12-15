@@ -106,6 +106,7 @@ options(digits=11)
     # Variance: α^2 = n*p*(1-p)
 
 # Hypergeometric distribution (Without replacement)
+    # “at least” two, so it is one minus the probability of ’less than or equal to 1’
     # dhyper(x, a, N-a, n-x) Calculates probability mass function (PMF) and returns the probability of drawing exactly X white balls.
     # x = probability of x successes drawn (What they are asking for, for example "Whats the probability of drawing 8 white balls?").
     # a = number of white balls in the urn (successes)
@@ -137,7 +138,8 @@ options(digits=11)
     
     # Mean: μ = df
     # Variance: α^2 = 2*df
-    # df = (r−1)(c−1) Where r = rows, c = columns.
+    # df = Equal to the number of standard normal deviates being summed.
+    # For example: x <- rnorm(100)^2 + rnorm(100)^2 + rnorm(100)^2 (df = 3).
 
 #######################################################################################################################
 
