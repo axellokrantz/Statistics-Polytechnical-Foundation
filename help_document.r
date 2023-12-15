@@ -157,6 +157,7 @@ options(digits=11)
     # beta = typically 0.2 (probability of committing a Type II error which is failing to reject the null hypothesis when its actually false.
     # ME = difference in mean.
     # Degrees of freedom: n - 1 where n is the sample size.
+    # t.test(x) where x <- c(...)
     
     # If you want to test a different hypothesis other than H0: mean = 0, for example that mu = 10000.
         # data <- c(12, 13, 14, 15, 16)  # your data
