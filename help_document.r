@@ -231,9 +231,9 @@ options(digits=11)
 # 2*(1-pt(tstatistic, df))
 
 # Type I and Type II error:
-#             Reject H0   Fail to reject H0
-# H0 true  |            |                   |
-# H0 false |            |                   |
+#             Reject H0          Accept H0
+# H0 true  | Type I error      | correct acceptance |
+# H0 false | correct rejection | Type II error      |
 
 #######################################################################################################################
 
