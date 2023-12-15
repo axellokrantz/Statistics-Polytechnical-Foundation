@@ -211,7 +211,8 @@ options(digits=11)
 
     # Pooled two sample t-test:
     # This requires that the two populations has equal true variance.
-    # t.test(x1, x2, var.equal=TRUE) # var.equal == The variance is equal... 
+    # t.test(x1, x2, var.equal=TRUE) # var.equal == The variance is equal...
+    # varp <- ((n1-1)*var1+(n2-1)*var2) / (n1+n2-2) The pooled estimate of the standard deviation (under the assumption of equal variance) 
 
 # Power t-test
     # power.t.test(delta = delta, sd = sd, power = power, sig.level = sig.level, type = type)
