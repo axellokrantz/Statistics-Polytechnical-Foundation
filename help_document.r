@@ -147,6 +147,8 @@ options(digits=11)
     # If confidence interval contains 0 we we fail to reject the null hypothesis. (Cannot conclude that one is better than the other)
     # If t value > t critical value we reject the null hypothesis based on alpha. (No p-value needed then). 
     # If p value < alpha value we reject the H0 hypothesis that there is no difference.
+    # A negative t-statistic means that the sample mean is below the null hypothesis value.
+    # A positive t-statistic means that the sample mean is below the null hypothesis value.
 
 # One sample t-test
     # Sample size formula (how many observations needed): n <- (sd*(qnorm(1-(sig/2))+qnorm(1-beta))/ME)^2
