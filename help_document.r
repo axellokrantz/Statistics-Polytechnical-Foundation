@@ -25,6 +25,7 @@ options(digits=11)
     # of the standard normal distribution.
 
 # Poisson distribution (Discrete version of Exponential Distribution)
+    # “at least” two, so it is one minus the probability of ’less than or equal to 1’
     # dpois(x, lambda) = Poisson Density Function. Returns the probability that a certain number of events (denoted by x)
     # occur in a fixed interval of time. Given fixed avg rate of occurence (lambda). For example, if a website is known to
     # make 10 sales per hour (lambda = 10), you can use dpois() to find the probability that the site makes exactly 8
@@ -72,8 +73,7 @@ options(digits=11)
     # Variance: σ^2 = 1/λ^2
 
 # Binomial distribution (with replacement)
-    # “at least” two, so it is one minus the probability of ’less
-    # than or equal to 1’
+    # “at least” two, so it is one minus the probability of ’less than or equal to 1’
     # Binary outcome: Either success or failure.
     # Fixed number of trials.
     # Independent trials, each trial is independent meaning one outcome does not affect another.
