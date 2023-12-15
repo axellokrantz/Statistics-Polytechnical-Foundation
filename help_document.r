@@ -230,6 +230,11 @@ options(digits=11)
 # p value for test statistic
 # 2*(1-pt(tstatistic, df))
 
+# Type I and Type II error:
+#             Reject H0   Fail to reject H0
+# H0 true  |            |                   |
+# H0 false |            |                   |
+
 #######################################################################################################################
 
 # Linear Regression Model
